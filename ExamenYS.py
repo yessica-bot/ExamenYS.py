@@ -56,11 +56,11 @@ def main():
     while True:
         print("*** MENU PRINCIPAL ***")
         print("1. Stock marca.")
-        print("2. Búsqueda por precio.")
+        print("2. Busqueda por precio.")
         print("3. Listado de productos.")
         print("4. Salir.")
         
-        opcion = input("Seleccione una opción: ")
+        opcion = input("Seleccione una opcion: ")
         
         if opcion == '1':
             marca = input("Ingrese la marca: ")
@@ -68,8 +68,8 @@ def main():
         elif opcion == '2':
             while True:
                 try:
-                    p_min = int(input("Ingrese el precio mínimo: "))
-                    p_max = int(input("Ingrese el precio máximo: "))
+                    p_min = int(input("Ingrese el precio minimo: "))
+                    p_max = int(input("Ingrese el precio maximo: "))
                     busqueda_precio(p_min, p_max)
                     break
                 except ValueError:
@@ -80,6 +80,6 @@ def main():
             print("Programa finalizado.")
             break
         else:
-            print("Debe seleccionar una opción válida!!")
+            print("Debe seleccionar una opcion valida!!")
 
 main()
